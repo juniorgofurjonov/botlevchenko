@@ -385,7 +385,7 @@ bot.on('text', async (message) => {
 					inline_keyboard: [
             [{ text: "👨‍Владелец", url: "https://t.me/mirman_smm" }],
             [{ text: "💻 Разработчик", url: "https://t.me/Shadowka1" }],
-            [{ text: "📢 Выплаты/Новости", url: "https://t.me/" }],
+            [{ text: "📢 Выплаты/Новости", url: "https://t.me/m_m_m_news" }],
 						[{ text: "🥇 Топ выводов", callback_data: "topInv" }, { text: "🏆 Топ рефоводов", callback_data: "topRef" }],
 					]
 				}
@@ -467,7 +467,7 @@ bot.on('callback_query', async (query) => {
 	}
 
 	if (query.data == 'withdraw') {
-		if (message.user.outbalance < 100) return bot.answerCallbackQuery(query.id, '🚫 Минимальная сумма вывода: 100', true);
+		if (message.user.outbalance < 50) return bot.answerCallbackQuery(query.id, '🚫 Минимальная сумма вывода: 50', true);
 		bot.deleteMessage(message.chat.id, message.message_id);
 		
 		await message.user.set('menu', 'qiwi');
