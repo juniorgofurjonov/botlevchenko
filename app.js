@@ -1,7 +1,7 @@
 const ADMINS = [791387202, 379752536]; // ID админов бота
 const DB_URL = "mongodb+srv://admin:admin1@cluster0.havzk.mongodb.net/db_tg_bot?retryWrites=true&w=majority"; // URL базы бота
 const QIWI_TOKEN = "9297e1fa9a1328ad3ee34d08f22131bb"; // API ключ QIWI кошелька с полным доступом
-const BOT_TOKEN = "2085009650:AAG4dzeg6MNlzdxrq_CG7oqPYXkQoq6ZoYc"; // Bot API Token
+const BOT_TOKEN = "2012275389:AAF6AFG9tQaMx34zBrvZRh1Ey7dsRwhV5hU"; // Bot API Token
 
 process.env.TZ = 'Moscow/Europe';
 
